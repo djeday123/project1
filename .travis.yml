@@ -12,3 +12,4 @@ install:
 	- zef --depsonly install .
 env:
 	- AUTHOR_TESTING=1
+y

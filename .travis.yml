@@ -9,5 +9,6 @@ install:
     - rakudobrew build-zef
     - zef install Test::META
     - zef install Path::Iterator
+    - zef install Bailador::Test
 env:
     - AUTHOR_TESTING=1

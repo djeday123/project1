@@ -1,6 +1,6 @@
 branches:
     except:
-        - latest
+        - gh-pages
 language: perl6
 
 perl6:

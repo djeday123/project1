@@ -2,16 +2,12 @@ branches:
     except:
         - gh-pages
 language: perl6
-
-sudo: required
-
+sudo: false
 perl6:
     - latest
-
 install:
     - rakudobrew build-zef
     - zef install Test::META
     - zef install Path::Iterator
-    - zef --deps-only install .
 env:
     - AUTHOR_TESTING=1

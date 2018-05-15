@@ -1,8 +1,3 @@
-sudo: false
-
-branches:
-    except:
-        - gh-pages
 language: perl6
 
 perl6:
@@ -13,5 +8,3 @@ install:
     - zef install Test::META
     - zef install Path::Iterator
     - zef --depsonly install .
-env:
-    - AUTHOR_TESTING=1

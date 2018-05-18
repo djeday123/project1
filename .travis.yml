@@ -9,7 +9,8 @@ install:
     - rakudobrew build-zef
     - zef install Test::META
     - zef install Path::Iterator
-    - zef install --serial HTTP::Server::Ogre
-    - zef install --serial Bailador::Test
+    - zef install --serial TAP::Harness
+    - zef install --serial Linenoise
+    - zef install --serial Bailador
 env:
     - AUTHOR_TESTING=1

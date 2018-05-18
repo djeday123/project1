@@ -10,6 +10,3 @@ install:
    - zef install Test::META
    - zef install Path::Iterator
    - zef install --depsonly --/test .
- script:
-   - PERL6LIB=$PWD/lib prove -e perl6 -vr t/
-

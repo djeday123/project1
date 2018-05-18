@@ -1,7 +1,15 @@
- install:
+branches:
+    except:
+        - gh-pages
+language: perl6
+sudo: false
+perl6:
+    - '2018.04'
+install:
    - rakudobrew build zef
    - zef install Test::META
-+  - zef install Path::Iterator
+   - zef install Path::Iterator
    - zef install --depsonly --/test .
  script:
    - PERL6LIB=$PWD/lib prove -e perl6 -vr t/
+

@@ -4,12 +4,11 @@ branches:
 language: perl6
 sudo: false
 perl6:
-    - '2017.08'
+    - '2018.04'
 install:
     - rakudobrew build-zef
-    - zef install Test::META
-    - zef install Path::Iterator
-    - zef install --serial HTTP::Server::Ogre
-    - zef install --serial Bailador::Test
+    - zef install --serial Tap::Harness
+    - zef install --serial Linenoise
+    - zef install --serial Bailador
 env:
     - AUTHOR_TESTING=1

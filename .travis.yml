@@ -4,9 +4,11 @@ branches:
 language: perl6
 sudo: false
 perl6:
-    - '2018.04'
+    - '2015.07'
 install:
    - rakudobrew build zef
    - zef install Test::META
    - zef install Path::Iterator
    - zef install --depsonly --/test .
+env:
+   - AUTHOR_TESTING=1
